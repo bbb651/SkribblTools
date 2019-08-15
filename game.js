@@ -1,10 +1,6 @@
 // modified code is marked with [modified]
 
-! function(t, e, n, o, r) {
-    
-    // [modified]
-    console.log("Modified game.js file loaded")
-    
+! function(t, e, n, o, r) {    
     function s(t, e, n, o) {
         var r = e[0] % W,
             s = e[1] % H,
@@ -3505,13 +3501,16 @@
                 ct.brush.setTool("pen");
                 break;
             case "E":
+            // [modified]
+            console.log("Test");
                 ct.brush.setTool("erase");
                 break;
             case "F":
-                ct.brush.setTool("fill")
+                ct.brush.setTool("fill");
             // [modified]
+                break;
             case "L":
-                ct.brush.setTool("line")
+                ct.brush.setTool("line");
         }
     }), ct.canvas.on("mousedown", function(t) {
         switch (t.preventDefault(), t.button) {

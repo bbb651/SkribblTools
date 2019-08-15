@@ -3501,14 +3501,12 @@
                 ct.brush.setTool("pen");
                 break;
             case "E":
-            // [modified]
-            console.log("Test");
                 ct.brush.setTool("erase");
                 break;
             case "F":
                 ct.brush.setTool("fill");
-            // [modified]
                 break;
+            // [modified]
             case "L":
                 ct.brush.setTool("line");
         }

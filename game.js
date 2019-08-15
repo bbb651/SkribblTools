@@ -1,6 +1,10 @@
 // modified code is marked with [modified]
 
 ! function(t, e, n, o, r) {
+    
+    // [modified]
+    console.log("Modified game.js file loaded")
+    
     function s(t, e, n, o) {
         var r = e[0] % W,
             s = e[1] % H,
@@ -316,9 +320,9 @@
                     break;
                 case "fill":
                     ct.brush.toolUsed || (o = ct.createDrawCommandFill(ct.brush.colorIndex, ct.mouseposPrev.x, ct.mouseposPrev.y, ct.mousepos.x, ct.mousepos.y))
-				// [modified]
-				case "line":
-					ct.brush.toolUsed || (o = ct.createDrawCommandFill(ct.brush.colorIndex, ct.mouseposPrev.x, ct.mouseposPrev.y, ct.mousepos.x, ct.mousepos.y))
+                // [modified]
+                case "line":
+                    ct.brush.toolUsed || (o = ct.createDrawCommandFill(ct.brush.colorIndex, ct.mouseposPrev.x, ct.mouseposPrev.y, ct.mousepos.x, ct.mousepos.y))
             }
             null != o && (ct.brush.toolUsed = !0, B(o))
         }
@@ -3203,8 +3207,8 @@
                 break;
             case "fill":
                 n("#canvasGame").css("cursor", "url(res/fill_graphic.png) 7 38, default")
-			// [modified]
-			case "line":
+            // [modified]
+            case "line":
         }
     };
     var Q = function(t) {
@@ -3505,9 +3509,9 @@
                 break;
             case "F":
                 ct.brush.setTool("fill")
-			// [modified]
-			case "L":
-				ct.brush.setTool("line")
+            // [modified]
+            case "L":
+                ct.brush.setTool("line")
         }
     }), ct.canvas.on("mousedown", function(t) {
         switch (t.preventDefault(), t.button) {
